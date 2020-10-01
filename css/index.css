@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	cursor: none;
+}
+body{
+	background-attachment: fixed;
+	background-image: url(../img/zero.png);
+	overflow: hidden;
+}
+#timer{
+	width: 200px;
+	height: 50px;
+	border: 2px solid yellow;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;	
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	margin: 80px auto;
+}
+#sliderbar{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: yellow;
+    background-color: #bbb;
+}
+#guide{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    width: 200px;
+    height: 600px;
+    text-align: left;
+    padding: 30px 20px 0 20px;
+    background-color: #aaa;
+    z-index: -1;
+}
+#angel{
+	position: absolute;
+	z-index: 100;
+	pointer-events: none; // The target of the click is not #angel, but the div beneath. 
+}
+#container{
+	width: 535px;
+	margin: 80px auto;
+}
+#container>div{
+	width: 128px;
+	height: 96px;
+	display: inline-block;
+	transform-style:preserve-3d;
+	transition:2s;
+}
+.front{
+	position: absolute;
+	width: 128px;
+	height: 96px;
+    background-color: #4b2518;
+}
+.back{
+	position: absolute;
+	width: 128px;
+	height: 96px;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);			
+}
